@@ -26,12 +26,10 @@ const Header = ({ title }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: "column",
-    // backgroundColor: "red",
+    justifyContent: "flex-end",
     alignItems: "flex-start",
-    justifyContent: "flex-start",
-    margin: 20,
+    marginTop: "5%",
   },
   text: {
     fontSize: 50,

@@ -1,11 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
-import SearchBar from "./components/SearchBar";
 import Home_page from "./pages/Home_page";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <SearchBar />
+      <Home_page />
     </View>
   );
 }
@@ -13,5 +12,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
+    margin: 20,
   },
 });
