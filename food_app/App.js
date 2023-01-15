@@ -5,10 +5,10 @@ import NavBar from "./components/NavBar";
 export default function App() {
   return (
     <>
-    <View style={styles.container}>
-      <Home_page />
-    </View>
-    <NavBar />
+      <View style={styles.container}>
+        <Home_page />
+      </View>
+      <NavBar />
     </>
   );
 }
@@ -16,7 +16,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
-    margin: 20,
+    marginStart: 20,
+    marginEnd: 20,
+    marginTop: 20,
     flex: 9,
-  }
+  },
 });

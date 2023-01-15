@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import { useFonts } from "expo-font";
 import { StyleSheet, SafeAreaView, Text } from "react-native";
 
+// Docs for importing font in expo: https://docs.expo.dev/guides/using-custom-fonts/
 const Header = ({ title }) => {
   const [fontsLoaded] = useFonts({
     "Comfortaa-Bold": require("../assets/fonts/Comfortaa-Bold.ttf"),

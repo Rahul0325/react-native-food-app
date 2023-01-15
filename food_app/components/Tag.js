@@ -5,7 +5,11 @@ import { LinearGradient } from "expo-linear-gradient";
 const Tag = (props) => {
   return (
     <View style={styles.tagBox}>
-      <LinearGradient colors={["#1FA4FD", "#11FEBE"]} style={styles.tagGradient} start={{x:0, y:0}}>
+      <LinearGradient
+        colors={["#1FA4FD", "#11FEBE"]}
+        style={styles.tagGradient}
+        start={{ x: 0, y: 0 }}
+      >
         <Text style={styles.tagText}>{props.name}</Text>
       </LinearGradient>
     </View>
@@ -20,7 +24,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   tagBox: {
-    margin: 10,
+    marginStart: 10,
+    marginEnd: 10,
     flex: 1,
   },
   tagGradient: {
