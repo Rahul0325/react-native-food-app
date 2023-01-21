@@ -31,15 +31,13 @@ const Details_page = () => {
 };
 
 const styles = StyleSheet.create({
-  header: {
-    margin: 15,
-  },
+  header: { marginBottom: 10 },
   tags: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 5,
   },
-  topView: {},
+  topView: { marginTop: 10 },
   source_food: {
     uri: "https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000",
   },
