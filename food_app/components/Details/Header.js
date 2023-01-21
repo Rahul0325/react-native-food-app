@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
-import { useFonts, Comfortaa_400Regular } from "@expo-google-fonts/comfortaa";
+import { useFonts, Comfortaa_600SemiBold } from "@expo-google-fonts/comfortaa";
 
 const Header = (props) => {
   let [fontsLoaded] = useFonts({
-    Comfortaa_400Regular,
+    Comfortaa_600SemiBold,
   });
 
   if (!fontsLoaded) {
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 40,
     textAlign: "right",
-    fontFamily: "Comfortaa_400Regular",
+    fontFamily: "Comfortaa_600SemiBold",
   },
   backButton: {
     justifyContent: "center",

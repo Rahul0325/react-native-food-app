@@ -13,12 +13,12 @@ const Details_page = () => {
         <Image source={styles.source_food} style={styles.foodImg} />
         <View style={styles.tags}>
           <DetailsTag
-            uri={require("../assets/icons/difficulty.png")}
-            text="Easy"
+            uri={require("../assets/icons/cuisine.png")}
+            text="Asian"
           />
           <DetailsTag
-            uri={require("../assets/icons/difficulty.png")}
-            text="Easy"
+            uri={require("../assets/icons/time.png")}
+            text="20 mins"
           />
           <DetailsTag
             uri={require("../assets/icons/difficulty.png")}
@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   tags: {
     flexDirection: "row",
     justifyContent: "space-between",
+    marginTop: 5,
   },
   topView: {},
   source_food: {

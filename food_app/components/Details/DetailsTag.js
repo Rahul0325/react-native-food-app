@@ -1,7 +1,16 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
+import { useFonts, Comfortaa_400Regular } from "@expo-google-fonts/comfortaa";
 
 const detailsTag = (props) => {
+  let [fontsLoaded] = useFonts({
+    Comfortaa_400Regular,
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <View style={styles.background}>
       <Image style={styles.icon} source={props.uri}></Image>
@@ -27,6 +36,7 @@ const styles = StyleSheet.create({
   text: {
     margin: 5,
     textAlign: "center",
+    fontFamily: "Comfortaa_400Regular",
   },
 });
 
