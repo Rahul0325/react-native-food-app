@@ -9,7 +9,7 @@ export default function App() {
       <View style={styles.container}>
         <Details_page />
       </View>
-      <NavBar />
+      {/* <NavBar /> */}
     </>
   );
 }

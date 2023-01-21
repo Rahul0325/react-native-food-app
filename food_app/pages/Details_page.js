@@ -1,11 +1,22 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Image, ScrollView } from "react-native";
 import Header from "../components/Details/Header";
+import DetailsTag from "../components/Details/DetailsTag";
 
 const Details_page = () => {
   return (
-    <View style={styles.header}>
-      <Header name="Dumplings And Soup Loved By US :)"/>
+    <View style={styles.topView}>
+      <View style={styles.header}>
+        <Header name="Fried Rice"/>
+      </View>
+      <ScrollView>
+        <Image source={styles.source_food} style={styles.foodImg}/>
+        <View style={styles.tags}>
+          <DetailsTag uri={require("../assets/icons/difficulty.png")} text="Easy"/>
+          <DetailsTag uri={require("../assets/icons/difficulty.png")} text="Easy"/>
+          <DetailsTag uri={require("../assets/icons/difficulty.png")} text="Easy"/>
+        </View>
+      </ScrollView>
     </View>
   );
 };
@@ -13,7 +24,22 @@ const Details_page = () => {
 const styles = StyleSheet.create({
   header: {
     margin: 15,
-  }
+  },
+  tags: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  topView: {
+  },
+  source_food: {
+    uri: "https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000",
+},
+foodImg: {
+    height: 300,
+    borderRadius: 20,
+    resizeMode: "cover",
+    marginBottom: 5,
+},
 })
 
 export default Details_page;
