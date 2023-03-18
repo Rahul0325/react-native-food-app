@@ -4,6 +4,7 @@ import Divider from "../components/Divider";
 import Header from "../components/Header";
 import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
+import TextForm from "../components/TextForm";
 
 const Home_page = () => {
   return (
